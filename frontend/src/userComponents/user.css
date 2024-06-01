@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.user-main{
+  width: 100vw;
+  height: 100vh;
+}
+.menu-icon{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+}
+.menubar{
+    position: relative;
+}
+.menu{
+    position: absolute;
+    background-color: white;
+    top: calc(50% - 10px + (50px * sin(var(--angle))));
+    left: calc(50% - 10px + (50px * cos(var(--angle))));
+}
+.menu-1,.menu-2,.menu-3,.menu-4{
+    transition: 0.5s;
+    font-size: 20px;
+}
+.menu-1:hover,.menu-2:hover,.menu-3:hover,.menu-4:hover{
+    scale: 0.9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.menu-1 {
+    --angle: 355deg;
+  }
+
+  .menu-2 {
+    --angle: 35deg;
+  }
+
+  .menu-3 {
+    --angle: 75deg;
+  }
+
+  .menu-4 {
+    --angle: 121deg;
+  }
+  .content{
+    width: 100vw;
+    margin-top: 55px;
+  }
+  .question-des{
+    max-height: 95vh;
+    overflow: scroll;
+    right: 0;
+    position: fixed;
+  }
+
+  ::-webkit-scrollbar{
+    width: 1px;
+  }
+  .user-main{
+    height: auto;
+  }
+.left-side{
+  min-height: 80vh;
+}
+.right-side{
+  height: auto;
+}
+.right-side .option:hover{
+  background-color: rgba(194, 194, 194, 0.558);
+}

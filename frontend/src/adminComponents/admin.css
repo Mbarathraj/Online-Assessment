@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Orbitron:wght@400..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+   /* font-family: "Orbitron", sans-serif; */
+    font-family: "Saira", sans-serif;
+}
+.main{
+    display: flex;
+    height: auto;
+}
+.sidebar{
+    width: 250px;
+    height: 100vh;
+    position: relative;
+
+}
+.sidebar .inner-sidebar{
+    width: inherit;
+    position: fixed;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 25px;
+}
+.sidebar.close{
+    width: 50px;
+}
+.main-content{
+    flex: 1;
+    min-height: auto;
+}
+.side-content div{
+ margin-bottom:3px;
+ transition: 0.1s;
+}
+.side-content div:hover{
+    background-color:rgb(255, 173, 20);
+    color: white;
+    font-weight: 700;
+}
+.main-header{
+    position: fixed;
+}
